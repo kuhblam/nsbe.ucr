@@ -1,0 +1,160 @@
+/*technically only for body content, too lazy to change class name atm*/
+/*idk if this even works so i'll have to test it with hyperlinks*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@300;400&display=swap');
+/*ALWAYS SET THE DEFAULT MARGINS AND PADDING TO ZERO
+    BROWSERS ARE TRIFLING*/
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.content {
+    font-family: 'Open Sans', sans-serif;
+    max-width: 960px;
+    margin: auto; /*somehow need to fix paragraph spacing w/o line breaks in html*/
+    padding-top: 200px;
+    padding-bottom: 60px;
+    
+}
+
+h1 {
+    line-height: 35px;
+}
+
+p {
+    padding: 20px;
+    line-break: loose;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.mid {
+    text-align: center;
+}
+
+/* =======this is going to be the parallax banner======
+omg this is so great,
+ this is how comments are made here*/
+.banner {
+    background-color: #ffb71c;
+    top: 0;
+    padding: 40px;
+    text-align: center;
+    font-size: 40px;
+    width: 100%;
+    height: 10;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logo {
+    width: 30%;
+    float: left;
+    text-align: left;
+    line-height: 100px;
+}
+
+/*NSBE LOGO IS THERE, I NEED TO UPDATE THE LINK???*/
+.logo a {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: op;
+
+}
+
+.stickyHeader {
+    background-color: #003da5;
+    padding-left: 40px;
+    position: fixed;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 150px;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 102px;
+}
+
+nav {
+    float: right;
+    line-height: 100px;
+}
+
+nav a {
+    float: right;
+    line-height: 100px;
+    letter-spacing: 3px;
+    padding: 36px 10px;
+    
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 20;
+    color: white;
+}
+
+/*MAKE THE LINK BOX LIGHT UP ON HOVER
+    MAY RQUIRE JAVASCRIPT*/
+nav a:hover {
+    background-color: white;
+    color: black;
+    font-weight: 500;
+}
+
+footer {
+    position: static;
+    padding: 80px;
+    padding-left: 5%;
+    padding-top: 7%;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #003da5;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+
+}
+
+.vl {
+    border-left: 6px double #ffb71c;
+    height: 200px;
+    
+  }
+
+/*dark mode for funsies*/
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+#topBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(50, 96, 182); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #topBtn:hover {
+    background-color: rgb(245, 235, 97); /* Add a dark-grey background on hover */
+  }
+
